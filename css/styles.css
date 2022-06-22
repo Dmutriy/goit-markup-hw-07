@@ -595,14 +595,14 @@ body {
     display: block;
 }
 
-/* ---------------------------------JOIN---------------------------------------- */
+/* ---------------------------------social---------------------------------------- */
 
-.join {
+.social {
     margin-left: 70px;
 }
 
-.join-title,
-.subscribe-title {
+.social__title,
+.subscribe__title {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
@@ -613,22 +613,22 @@ body {
     color: var(--second-title-color);
 }
 
-.join-list {
+.social__list {
     display: flex;
     margin-top: var(--typical-margin);
 }
 
-.join-item {
+.social__item {
     width: 44px;
     height: 44px;
     margin-right: 10px;
 }
 
-.join-item:last-child {
+.social__item:last-child {
     margin-right: 0;
 }
 
-.join-link {
+.social__link {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.1);
@@ -639,18 +639,18 @@ body {
     transition: background-color var(---transition-hover);
 }
 
-.join-icon {
+.social__icon {
     fill: var(--second-icon-color);
     transition: fill var(---transition-hover);
 }
 
-.join-link:hover,
-.join-link:focus {
+.social__link:hover,
+.social__link:focus {
     background-color: var(--btn-br-color);
 }
 
-.join-link:hover .join-icon,
-.join-link:focus .join-icon {
+.social__link:hover .social-icon,
+.social__link:focus .social-icon {
     fill: var(--btn-color);
 }
 
@@ -660,12 +660,14 @@ body {
     margin-left: 70px;
 }
 
-.subscribe-wrap {
+.subscribe__wrap {
     display: flex;
     margin-top: var(--typical-margin);
 }
 
-.subscribe-input-email {
+.subscribe__email-input {
+    height: 50px;
+
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -685,7 +687,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-input-email::placeholder {
+.subscribe__email-input::placeholder {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -699,7 +701,8 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-btn {
+.subscribe__btn {
+    height: 50px;
     padding: 12px 29px;
 
     font-family: inherit;
@@ -725,7 +728,7 @@ body {
     border-radius: 4px;
 }
 
-.subscribe-icon {
+.subscribe__icon {
     margin-left: 12px;
 }
 
