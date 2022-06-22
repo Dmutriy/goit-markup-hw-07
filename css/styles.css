@@ -92,7 +92,7 @@ body {
     background: var(--mine-br-color);
 }
 
-.header-logo {
+.logo {
     margin-right: 93px;
 
     font-family: "Raleway";
@@ -103,7 +103,7 @@ body {
     color: var(--accent-color);
 }
 
-.header-logo-studio {
+.logo--darck {
     color: var(--mine-title-color);
 }
 
@@ -114,7 +114,7 @@ body {
     align-items: center;
 }
 
-.header-list {
+.nav__list {
     display: flex;
     align-items: center;
 }
@@ -125,12 +125,12 @@ body {
     align-items: baseline;
 }
 
-.header-list li:not(:last-child),
+.nav__list li:not(:last-child),
 .contacts li:not(:last-child) {
     margin-right: 50px;
 }
 
-.header .header-link {
+.header .nav__link {
     color: var(--mine-title-color);
     padding-top: 32px;
     padding-bottom: 32px;
@@ -138,11 +138,7 @@ body {
     transition: color var(---transition-hover);
 }
 
-.header-nav {
-    background-color: var(--mine-br-color);
-}
-
-.header-nav {
+.nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -152,11 +148,11 @@ body {
     background-color: var(--mine-br-color);
 }
 
-.header-list .header-link.current {
+.nav__list .nav__link.current {
     color: var(--accent-color);
 }
 
-.header-link.current::after {
+.nav__link .current::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -167,8 +163,8 @@ body {
     bottom: 0;
 }
 
-.header-mail,
-.header-tel {
+.contacts__mail,
+.contacts__tel {
     display: flex;
     align-items: center;
 
@@ -181,22 +177,22 @@ body {
     transition: color var(---transition-hover);
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
+.nav__link:hover,
+.nav__link:focus,
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__tel:hover,
+.contacts__tel:focus {
     color: var(--accent-color);
 }
 
-.header-contacts-item .header-icon {
+.contacts__item .contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.header-contacts-item:hover .header-icon,
-.header-contacts-item:focus .header-icon {
+.contacts__item:hover .contacts__icon,
+.contacts__item:focus .contacts__icon {
     fill: currentColor;
 }
 
