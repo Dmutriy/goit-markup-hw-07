@@ -169,11 +169,11 @@ body {
     background-color: var(--mine-br-color);
 }
 
-.nav__list .nav__link.current {
+.nav__list .current {
     color: var(--accent-color);
 }
 
-.nav__link .current::after {
+.nav__link.current::after {
     content: "";
     position: absolute;
     width: 100%;
