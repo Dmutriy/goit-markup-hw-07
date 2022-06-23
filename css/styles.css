@@ -1,15 +1,3 @@
-/* logo та зсилки (якорі)  color: #2196F3 */
-/* Колір основного тексту  color: #212121; */
-/* Додатковий колір тексту color: #757575; */
-/* колір заголовоку та шрифту футера color: #ffffff;  */
-/* футер та перша секція   background: #2F303A */
-/* шрифти font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 :root {
     --font-family-color: #212121;
     --btn-color: #ffffff;
