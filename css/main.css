@@ -290,6 +290,10 @@ body {
   /* max-width: 270px; */
 }
 
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .about__title {
   font-weight: 700;
   font-size: 36px;
@@ -299,26 +303,17 @@ body {
   color: var(--mine-color-text);
   margin-bottom: 50px;
 }
-
-.about {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .about .about__list {
   display: flex;
   align-items: center;
 }
-
 .about .about__item + .about__item {
   flex-basis: calc(33.3333333333% - 30px);
   margin-left: 30px;
 }
-
 .about__top-wrap {
   position: relative;
 }
-
 .about__top-text {
   position: absolute;
   left: 0;
@@ -333,7 +328,6 @@ body {
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
   color: var(--second-title-color);
-  /* padding: 27px 0px; */
   padding: 27px 0px;
 }
 
@@ -453,7 +447,6 @@ body {
   margin-left: calc(-1 * var(--typical-secon-margine));
   margin-top: calc(-1 * var(--typical-secon-margine));
 }
-
 .client__list > .client__item {
   flex-basis: calc(16.6666666667% - var(--typical-secon-margine));
   margin-left: var(--typical-secon-margine);
@@ -472,19 +465,15 @@ body {
   border-radius: 4px;
   transition: border var(---transition-hover);
 }
+.client__link:hover, .client__link:focus {
+  border: 1px solid var(--btn-br-color);
+}
 
 .client__icon {
   fill: #afb1b8;
   transition: fill var(---transition-hover);
 }
-
-.client__link:hover,
-.client__link:focus {
-  border: 1px solid var(--btn-br-color);
-}
-
-.client__link:hover .client__icon,
-.client__link:focus .client__icon {
+.client__link:hover .client__icon, .client__link:focus .client__icon {
   fill: var(--btn-br-color);
 }
 
@@ -648,19 +637,18 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .filter .filter__list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.filter .filter__item:not(:last-child) {
-  margin-right: 9px;
-}
-
 .filter__list {
   margin-bottom: 50px;
+}
+
+.filter .filter__item:not(:last-child) {
+  margin-right: 9px;
 }
 
 .filter__btn {
@@ -677,9 +665,7 @@ body {
   border: none;
   transition: background var(---transition-hover), color var(---transition-hover), box-shadow var(---transition-hover);
 }
-
-.filter__btn:hover,
-.filter__btn:focus {
+.filter__btn:hover, .filter__btn:focus {
   background: var(--btn-br-color);
   color: var(--btn-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -695,11 +681,9 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
 .filter .portfolio__item:nth-child(3n) {
   margin-right: 0;
 }
-
 .filter .portfolio__item:nth-last-child(-n+3) {
   margin-bottom: 0px;
 }
