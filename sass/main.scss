@@ -1,7 +1,31 @@
-body {
-    color: aqua;
-}
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
+@import "./components/button";
 
-h1 {
-    color: azure;
-}
+// index
+@import "./components/logo";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/specifix";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/client";
+@import "./layout/footer";
+@import "./layout/address";
+@import "./layout/social";
+@import "./layout/sobscribe";
+
+// portfolio
+@import "./layout/filter";
+@import "./layout/portfolio";
+
+// modal
+@import "./layout/backdrop";
+@import "./components/modal";
+@import "./base/is-hidden";
+@import "./base/no-skroll";
+@import "./layout/form";
+
+@import "./components/container";
