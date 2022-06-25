@@ -13,8 +13,7 @@
 
 .svg-wrap {
     height: 120px;
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
 
     background: #f5f4fa;
@@ -28,10 +27,7 @@
 }
 
 .specifics__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--mine-color-text);
     margin-bottom: 10px;

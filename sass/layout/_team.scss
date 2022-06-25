@@ -8,11 +8,8 @@
 }
 
 .team__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include font(700, 36px, 1.16, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--mine-title-color);
     margin-bottom: 50px;
 }
@@ -32,6 +29,7 @@
 }
 
 .team__title-bottom {
+    @include font(500, 16px, 1.19, 0.03em);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -47,45 +45,4 @@
     letter-spacing: 0.03em;
     color: var(--second-color-text);
     margin-bottom: 16px;
-}
-
-/* soc */
-
-.soc__list {
-    display: flex;
-    justify-content: center;
-}
-
-.soc__item {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.soc__link {
-    width: 100%;
-    height: 100%;
-    background-color: var(--btn-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color var(---transition-hover);
-    &:hover,
-    &:focus {
-        background-color: var(--btn-br-color);
-    }
-}
-
-.soc__icon {
-    fill: var(--icon-color);
-    transition: fill var(---transition-hover);
-    .soc__link:hover &,
-    .soc__link:focus & {
-        fill: var(--btn-color);
-    }
 }
