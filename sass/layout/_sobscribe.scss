@@ -27,20 +27,19 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
-}
+    &::placeholder {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
 
-.subscribe__email-input::placeholder {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
 
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .subscribe__btn {
@@ -61,13 +60,13 @@
     border: none;
     transition: background var(---transition-hover),
         box-shadow var(---transition-hover);
-}
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-    background: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    &:hover,
+    &:focus {
+        background: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
 }
 
 .subscribe__icon {

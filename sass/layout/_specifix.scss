@@ -1,11 +1,10 @@
 .specifics {
     padding-top: 94px;
-}
-
-.specifics .specifics__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .specifics__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .specifics__item {
@@ -43,5 +42,4 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-color-text);
-    /* max-width: 270px; */
 }

@@ -1,16 +1,25 @@
 .header {
     border-bottom: 1px solid var(--border-solid-color);
     background: var(--mine-br-color);
-}
-
-.header .container {
-    display: flex;
-    align-items: center;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .nav__link {
+        color: var(--mine-title-color);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        position: relative;
+        transition: color var(---transition-hover);
+    }
 }
 
 .nav__list {
     display: flex;
     align-items: center;
+    .current {
+        color: var(--accent-color);
+    }
 }
 
 .contacts {
@@ -24,14 +33,6 @@
     margin-right: 50px;
 }
 
-.header .nav__link {
-    color: var(--mine-title-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-    position: relative;
-    transition: color var(---transition-hover);
-}
-
 .nav {
     font-weight: 500;
     font-size: 14px;
@@ -40,10 +41,6 @@
 
     color: var(--mine-title-color);
     background-color: var(--mine-br-color);
-}
-
-.nav__list .current {
-    color: var(--accent-color);
 }
 
 .nav__link.current::after {
@@ -69,14 +66,14 @@
     color: var(--second-color-text);
     padding: 32px 0;
     transition: color var(---transition-hover);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .nav__link:hover,
-.nav__link:focus,
-.contacts__mail:hover,
-.contacts__mail:focus,
-.contacts__tel:hover,
-.contacts__tel:focus {
+.nav__link:focus {
     color: var(--accent-color);
 }
 
